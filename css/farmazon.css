@@ -1,3 +1,6 @@
+/* Lock Landscape */
+
+
 /* Navbar */
 .navbar {
     height: 5rem;
@@ -81,12 +84,15 @@ h1.mb-5 {
 .modal-content {
     background: #74c9b4;
 }
-.modal-title{
+
+.modal-title {
     color: white;
 }
-.modal.fade.show{
+
+.modal.fade.show {
     background: #49514f;
 }
+
 .col-form-label {
     display: flex;
 }
@@ -105,11 +111,13 @@ h1.mb-5 {
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus,
+.btn-primary:focus {
     box-shadow: none;
 }
-.modal-backdrop{
-    display: none;  
+
+.modal-backdrop {
+    display: none;
 }
 
 /* Loghi Vantaggi */
@@ -126,9 +134,11 @@ h1.mb-5 {
 .text-primary {
     color: #74c9b4 !important;
 }
+
 .features-icons .features-icons-item:hover .features-icons-icon>img {
     width: 26%;
 }
+
 /* Footer */
 footer .col-12 {
     text-align: -webkit-center !important;
@@ -137,7 +147,7 @@ footer .col-12 {
 }
 
 footer .col-12 #footer_logo {
-    max-width: 5    0%;
+    max-width: 5 0%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -176,7 +186,8 @@ footer .col .list-item {
     color: #508a7b;
     font-weight: bold;
 }
-footer .col .list-item a{
+
+footer .col .list-item a {
     font-size: 1.2rem;
     color: #74c9b4;
     font-weight: 400;
@@ -192,29 +203,31 @@ footer {
     }
 }
 
-.footer.bg-light{
-    background-color: #f0f1ff!important;
+.footer.bg-light {
+    background-color: #f0f1ff !important;
 }
 
-.list-inline-item a{
-    color:#6c757d;
+.list-inline-item a {
+    color: #6c757d;
 }
 
-.call-to-action h2{
+.call-to-action h2 {
     color: #508a7b;
 }
 
-@media screen and (max-width:500px){
-    .call-to-action h2{
+@media screen and (max-width:500px) {
+    .call-to-action h2 {
         font-size: 1.5rem;
     }
 }
-.call-to-action input:focus{
+
+.call-to-action input:focus {
     border-color: none;
     box-shadow: none;
     border-color: #508a7b;
 }
-.call-to-action .form-row .col-6{
+
+.call-to-action .form-row .col-6 {
     padding-top: 5vh;
     margin: auto;
 }
