@@ -1,0 +1,220 @@
+/* Navbar */
+.navbar {
+    height: 5rem;
+    opacity: 0.9;
+}
+
+.navbar .row {
+    width: -webkit-fill-available;
+}
+
+/* Header */
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url(../img/header_image.jpeg) no-repeat right;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-top: 5rem;
+    height: 90vh;
+    ;
+    /*max-height: 85vh;*/
+}
+
+.masthead .container {
+    padding-top: 20vh;
+}
+
+h1.mb-5 {
+    margin-bottom: 1rem !important;
+}
+
+@media screen and (max-width:330px) {
+    .masthead .container {
+        padding-top: 15vh;
+    }
+}
+
+/* Bottone per la registrazione */
+.btn-registrazione {
+    background: #74c9b4 !important;
+    border: none !important;
+    border-radius: 50px;
+}
+
+.btn-registrazione:hover {
+    border: solid 1px #508a7b !important;
+    color: #508a7b !important;
+    background: #fff !important;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-registrazione:focus {
+    box-shadow: none !important;
+}
+
+#btn_1 {
+    padding: 0.4rem 2rem;
+}
+
+#btn_2 {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-brand {
+        margin: auto;
+    }
+
+    #btn_1 {
+        visibility: hidden;
+        display: none;
+    }
+
+    #btn_2 {
+        visibility: visible !important;
+    }
+}
+
+/* Modale Registrazione */
+.modal-content {
+    background: #74c9b4;
+}
+.modal-title{
+    color: white;
+}
+.modal.fade.show{
+    background: #49514f;
+}
+.col-form-label {
+    display: flex;
+}
+
+.close {
+    color: #fff;
+}
+
+.modal-footer button {
+    border: solid 1px #508a7b !important;
+    border-radius: 50px;
+    color: #508a7b !important;
+    background: #fff !important;
+    transition: ease-in-out 0.3s;
+    width: -webkit-fill-available;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+}
+.modal-backdrop{
+    display: none;  
+}
+
+/* Loghi Vantaggi */
+.features-icons .icon-screen-desktop:before {
+    content: url(/img/fz_icon_timer.svg)
+}
+
+.features-icons img {
+    margin: auto;
+    width: 23%;
+    color: #74c9b4;
+}
+
+.text-primary {
+    color: #74c9b4 !important;
+}
+.features-icons .features-icons-item:hover .features-icons-icon>img {
+    width: 26%;
+}
+/* Footer */
+footer .col-12 {
+    text-align: -webkit-center !important;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+footer .col-12 #footer_logo {
+    max-width: 5    0%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    footer .col-12 #footer_logo {
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    footer .col-12 #footer_logo {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 280px) and(max-width: 500px) {
+    footer .col-12 #footer_logo {
+        max-width: 60%;
+        width: 200px;
+    }
+}
+
+footer .col-lg-12 {
+    text-align: -webkit-center !important;
+    text-align: center;
+}
+
+footer .col {
+    width: -webkit-fill-available;
+    text-align: -webkit-center !important;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+footer .col .list-item {
+    font-size: 1.3rem;
+    color: #508a7b;
+    font-weight: bold;
+}
+footer .col .list-item a{
+    font-size: 1.2rem;
+    color: #74c9b4;
+    font-weight: 400;
+}
+
+footer {
+    padding-bottom: 2rem !important;
+}
+
+@media screen and (max-width: 500px) {
+    .footer .list-item {
+        display: grid;
+    }
+}
+
+.footer.bg-light{
+    background-color: #f0f1ff!important;
+}
+
+.list-inline-item a{
+    color:#6c757d;
+}
+
+.call-to-action h2{
+    color: #508a7b;
+}
+
+@media screen and (max-width:500px){
+    .call-to-action h2{
+        font-size: 1.5rem;
+    }
+}
+.call-to-action input:focus{
+    border-color: none;
+    box-shadow: none;
+    border-color: #508a7b;
+}
+.call-to-action .form-row .col-6{
+    padding-top: 5vh;
+    margin: auto;
+}
