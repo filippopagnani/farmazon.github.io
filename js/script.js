@@ -18,13 +18,11 @@
 
   var inputUser = {value: "zzdefault"};
   const inputName = document.getElementById("inputName");
-  const inputAddress = document.getElementById("inputAddress");
   const inputEmail = document.getElementById("inputEmail");
   const submitButton = document.getElementById("submitButton");
 
   submitButton.addEventListener("click", e => {
     if (inputName.value == "") {inputName.value = "zzdefault";}
-    if (inputAddress.value == "") {inputAddress.value = "zzdefault";}
     if (inputEmail.value == "") {inputEmail.value = "zzdefault@zzdefault";}
     var tempo = new Date();
     inputUser.value = inputName.value +"_"+ tempo.getMonth()+ tempo.getDate()+ tempo.getHours()+tempo.getMinutes()+tempo.getSeconds();
@@ -33,7 +31,6 @@
 
     database.ref(path).set({
       name: inputName.value,
-      address: inputAddress.value,
       email: inputEmail.value
 
     });
