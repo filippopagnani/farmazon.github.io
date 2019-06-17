@@ -45,7 +45,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
+              <div id="modal-body" class="modal-body">
                 <form>
                   <div class="form-group">
                     <label for="recipient-name" class="col-form-label">Nome e cognome:</label>
@@ -68,7 +68,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button id="submitButton" type="button" class="btn btn-primary" data-dismiss="modal">Conferma registrazione</button>
+                <button id="submitButton" type="button" class="btn btn-primary">Conferma registrazione</button>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body">
+                      <div id="modal-body" class="modal-body">
                         <form>
                           <div class="form-group">
                             <label for="recipient-name" class="col-form-label">E-mail:</label>
@@ -220,19 +220,10 @@
         <div class="col-md-12 col-lg-12 col-xl-12 mx-auto">
           <form>
             <div class="form-row">
-              
-              <div class="col-12">
-                <label for="recipient-name" class="col-form-label">Nome e cognome:</label>
-                <input type="email" class="form-control form-control-lg" placeholder="">
-              </div> 
-              
-              <div class="col-12">
-               <label for="recipient-name" class="col-form-label">Email:</label>
-               <input type="email" class="form-control form-control-lg" placeholder="">
-              </div>
-              
+
+
               <div class="col-6">
-                <button class="btn btn-block btn-lg btn-primary btn-registrazione" data-toggle="modal"
+                <button type="button" class="btn btn-block btn-lg btn-primary btn-registrazione" data-toggle="modal"
           data-target="#exampleModal">Registrati!</button>
               </div>
             </div>
@@ -319,12 +310,12 @@
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
-    
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/bootstrap/js/farmazone.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+
   <script src="js/script.js"></script>
 </body>
 
