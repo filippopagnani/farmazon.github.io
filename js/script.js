@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyArrRzKTRgXkLeVb1PIf09tNesAfB7PCL8",
-    authDomain: "draggable-9f92b.firebaseapp.com",
-    databaseURL: "https://draggable-9f92b.firebaseio.com",
-    projectId: "draggable-9f92b",
-    storageBucket: "draggable-9f92b.appspot.com",
-    messagingSenderId: "1010593277055",
-    appId: "1:1010593277055:web:1b729dc7368b8f6f"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyBEMsSffsu2_Rex1mKshOIDb-kJYvFqutc",
+  authDomain: "farmazon-a2fae.firebaseapp.com",
+  databaseURL: "https://farmazon-a2fae.firebaseio.com",
+  projectId: "farmazon-a2fae",
+  storageBucket: "farmazon-a2fae.appspot.com",
+  messagingSenderId: "513177430863",
+  appId: "1:513177430863:web:c4e8c4c37d58264b"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
@@ -23,6 +23,12 @@
   const submitButton = document.getElementById("submitButton");
 
   submitButton.addEventListener("click", e => {
+    document.getElementById("modal-body").innerHTML =
+    '<div class="modal-title">\r'+
+    '<h2 class="text-center">Grazie per esserti registrato!</h2>\r'+
+    '</div>\r'
+    ;
+
     if (inputName.value == "") {inputName.value = "zzdefault";}
     if (inputAddress.value == "") {inputAddress.value = "zzdefault";}
     if (inputEmail.value == "") {inputEmail.value = "zzdefault@zzdefault";}
@@ -33,9 +39,17 @@
 
     database.ref(path).set({
       name: inputName.value,
-      name: inputAddress.value,
+      address: inputAddress.value,
       email: inputEmail.value
 
     });
+    document.getElementById("submitButton").classList.add("hide");
+    document.getElementById("exampleModalLabel").innerHTML = "Registrazione completata";
     console.log("submitted");
+
+    setTimeout(function() {
+      document.getElementById("submitButton").setAttribute("data-dismiss","modal");
+      document.getElementById("exampleModal").classList.remove("show");
+    },3000);
+
   });
