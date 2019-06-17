@@ -77,6 +77,8 @@ h1.mb-5 {
 
     #btn_2 {
         visibility: visible !important;
+        width: 60%;
+        margin-left: 20%;
     }
 }
 
@@ -120,6 +122,11 @@ h1.mb-5 {
     display: none;
 }
 
+#exampleModal{
+padding-left: 16px;
+padding-right: 16px;
+}
+
 /* Loghi Vantaggi */
 .features-icons .icon-screen-desktop:before {
     content: url(/img/fz_icon_timer.svg)
@@ -147,7 +154,7 @@ footer .col-12 {
 }
 
 footer .col-12 #footer_logo {
-    max-width: 5 0%;
+    max-width: 50%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -203,6 +210,13 @@ footer {
     }
 }
 
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
 .footer.bg-light {
     background-color: #f0f1ff !important;
 }
